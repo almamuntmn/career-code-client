@@ -1,11 +1,12 @@
 import React from 'react';
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import team1 from '../../assets/team/team1.jpg';
 import team2 from '../../assets/team/team2.jpg';
 
 const Banner = () => {
   return (
-    <div className="hero bg-base-200 min-h-screen">
+    <div className="hero mb-20">
       <div className="hero-content flex-col lg:flex-row-reverse">
        <div className='flex-1'>
          <motion.img
