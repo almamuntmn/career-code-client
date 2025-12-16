@@ -6,9 +6,10 @@ import Swal from 'sweetalert2';
 
 const JobApply = () => {
     const { id: jobId } = useParams();
-    const user = useAuth();
+    const { user } = useAuth();
     console.log(user);
-    console.log(jobId);
+
+
 
     const handleApplyJob = (event) => {
         event.preventDefault();
@@ -17,6 +18,7 @@ const JobApply = () => {
         const github = form.github.value;
         const resume = form.resume.value;
         console.log(linkedIn, github, resume)
+
 
 
         const application = {
