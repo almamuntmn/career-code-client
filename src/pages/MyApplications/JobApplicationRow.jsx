@@ -1,7 +1,7 @@
 import React from 'react';
 
 const JobApplicationRow = ({ application }) => {
-    const {companyLogo, title, company}= application
+    const { companyLogo, title, company, applicant } = application
     return (
         <div>
             <tr>
@@ -30,7 +30,7 @@ const JobApplicationRow = ({ application }) => {
                     <br />
                     <span className="badge badge-ghost badge-sm">Desktop Support Technician</span>
                 </td>
-                <td>Purple</td>
+                <td>{applicant}</td>
                 <th>
                     <button className="btn btn-ghost btn-xs">details</button>
                 </th>
